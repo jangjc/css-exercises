@@ -4,22 +4,15 @@ body {
   
 }
 
+/* original 
 .card {
-  width: 600px;
+  width: 400px;
   background: #fff;
   margin: 16px auto;
-  padding-top: 16px;
-  padding-bottom: 1px;
-}
-
-.title, .content, .button-container {
-  margin: 8px;
-  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
-  font-size: 16px;
 }
 
 .content {
@@ -28,14 +21,57 @@ body {
 
 .button-container {
   background: #e3f4ff;
-  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
-  display: block;
+}
+*/
+
+/**/
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  padding: 8px;
+}
+
+/* .title, .content, .button-container {
+  margin: 8px;
+  padding: 8px;
+} */
+
+.title {
+  background: #e3f4ff;
+  /* font-size: 16px; */
+  margin-bottom: 8px; /* top inherit from h1 */
+  font-size: 16px;
+  padding: 8px;
+}
+
+.content {
+  background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  /* text-align: center; */
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  /* display: block;
   width: 100px;
   height: 32px;
-  margin: auto;
+  margin: auto; */
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;/* set button size by padding */
 }
+/**/  
