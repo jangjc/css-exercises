@@ -23,10 +23,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  padding: 16px;
-
+  /* Solution: */
   display: flex;
   gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -40,25 +40,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  /* this keeps the icon from getting smashed by the text */
   flex-shrink: 0;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-} */
-
-.header-section {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
+/* Solution: */
 .header {
-  font-size: 24px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .close-button {
@@ -76,6 +69,7 @@ body {
   padding: 0;
 }
 
+/* Solution: */
 .text{
   margin-bottom: 16px;
 }
